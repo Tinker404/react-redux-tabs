@@ -1,0 +1,46 @@
+@active : #E36347;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+#tab-navs {
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 20px;
+  background-color: #f6f6f6;
+  font-size: 16px;
+
+  li{
+    display: inline;
+    margin-left: 2px;
+    margin-right: 2px;
+
+    a{
+      padding: 9px;
+      text-decoration: none;
+      color: #666;
+
+      &:hover{
+        border-bottom: 2px solid @active;
+      }
+    }
+
+    .active{
+      border-bottom: 2px solid @active;
+    }
+  }
+}
+
+#tab-content{
+  div{
+    display: none;
+    margin: 20px;
+  }
+}
+
